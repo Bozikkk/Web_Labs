@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rw_styles.css">
+    <link rel="icon" type="image/png" href="..\res\icon_tesla_coil.png">
+    <title>Електра - Головна</title>
+
+    <style>
+        form {
+            margin: 20px 0;
+        }
+
+        label {
+            display: inline-block;
+            margin: 2px 4px;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #8d6e43;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #fcf1ca;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #3f3e7c;
+            margin-bottom: 12px;
+            margin-left: 8px;
+        }
+
+        input[type="color"] {
+            width: 128px;
+            height: 20px;
+            padding: 0 2px;
+            border: 1px solid #8d6e43;
+            margin-bottom: 12px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #3f3e7c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #6c6eaf;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="top" class="block-s bg-sandy text-centered border-bottom box-shadow add-margin-tb add-padding-tb block-centered border-radius">
+        <header style="margin-bottom: 8px;">
+            <h1 class="inline text-blue balder text-shadow border-bottom">Електра</h1>
+        </header>
+        <a href="main.html" class="balder inline-block add-margin-lr text-shadow">Головна</a>
+        <a href="about_components.html" class="balder inline-block add-margin-lr text-shadow">Про Компоненти</a>
+        <a href="projects.html" class="balder inline-block add-margin-lr text-shadow">Проєкти</a>
+    </nav>
+
+    <div class="block-s block-centered">
+        <section class="bg-sandy add-margin-b add-padding-tb add-padding-lr border-radius box-shadow">
+            <h2 class="text-blue add-margin-b border-bottom">Історія радіоелектроніки</h2>
+            <p>Радіоелектроніка — це галузь науки і техніки, яка вивчає електромагнітні коливання і хвилі радіодіапазону, методи генерації, підсилення, перетворення, випромінювання та прийому радіосигналів.</p>
+            <p>Визначення однозначного основоположника радіо є складним завданням, оскільки розвиток цієї технології був результатом внеску багатьох винахідників та науковців. Від фундаментальних відкриттів електромагнітних хвиль <a href="https://uk.wikipedia.org/wiki/Генріх_Герц" target="_blank">Герцем</a> до практичних демонстрацій бездротового зв'язку <a href="https://uk.wikipedia.org/wiki/Нікола_Тесла" target="_blank">Теслою</a>, <a href="https://uk.wikipedia.org/wiki/Попов_Олександр_Степанович" target="_blank">Поповим</a> та комерціалізації радіотелеграфії <a href="https://uk.wikipedia.org/wiki/Гульєльмо_Марконі" target="_blank">Марконі</a>, кожен зробив важливий крок у становленні радіоелектроніки. Тому історія винаходу радіо є радше історією колективних зусиль та поступового розвитку, ніж результатом одноосібного відкриття.</p>
+            <p>З розвитком напівпровідникових технологій у 20 столітті, радіоелектроніка зазнала революційних змін, які призвели до мініатюризації пристроїв та розширення їхніх функціональних можливостей.</p>
+
+            <figure class="frame block block-centered text-centered standart-width">
+                <img src="..\res\Marconi_radiotelegraph.webp" alt="Зображення Гульєльмо Марконі з одним з перших його радіотелеграфних пристроїв." class="image-ss">
+                <figcaption class="add-small-margin-t"><a href="https://uk.wikipedia.org/wiki/Гульєльмо_Марконі" target="_blank"><i>Гульєльмо Марконі</a> з одним з перших його радіотелеграфних пристроїв.</i></figcaption>
+            </figure>
+        </section>
+
+        <section class="bg-sandy add-padding-tb add-padding-lr border-radius box-shadow">
+            <h2 class="text-blue add-margin-b border-bottom">Форум користувачів</h2>
+            <p>Долучайтеся до нашої спільноти радіотехніків! Заповніть форму нижче, щоб зареєструватися:</p>
+
+            <form action="/register" method="post">
+                <fieldset class="bg-lighter-sandy standart-border border-radius add-padding">
+                    <legend class="bg-sandy standart-border add-padding-lr text-blue bald border-radius">Форма реєстрації користувача</legend>
+
+                    <div>
+                        <label for="username">Ім'я:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Електронна пошта:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Номер телефону:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div>
+                        <label for="birth">Дата народження:</label>
+                        <input type="date" id="birth" name="birth">
+                    </div>
+
+                    <div>
+                        <label for="color">Улюблений колір (для теми):</label>
+                        <input type="color" id="color" name="color" value="#3f3e7c">
+                    </div>
+
+                    <div>
+                        <label>Рівень досвіду:</label>
+                        <input type="radio" id="beginner" name="experience" value="beginner"><label for="beginner">Початковий</label>
+                        <input type="radio" id="intermediate" name="experience" value="intermediate"><label for="intermediate">Середній</label>
+                        <input type="radio" id="advanced" name="experience" value="advanced"><label for="advanced">Продвинутий</label>
+                    </div>
+
+                    <div>
+                        <label>Сфери інтересів:</label>
+                        <input type="checkbox" id="analog" name="interests" value="analog"><label for="analog">Аналогова електроніка</label>
+                        <input type="checkbox" id="digital" name="interests" value="digital"><label for="digital">Цифрова електроніка</label>
+                        <input type="checkbox" id="microcontrollers" name="interests" value="microcontrollers"><label for="microcontrollers">Мікроконтролери</label>
+                    </div>
+
+                    <div style="margin-top: 6px;">
+                        <label for="country">Країна:</label>
+                        <select id="country" name="country">
+                            <option value="Ukraine">Україна</option>
+                            <option value="Poland">Польща</option>
+                            <option value="Germany">Німеччина</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="avatar">Фото профілю:</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/*">
+                    </div>
+
+                    <div>
+                        <label for="BIO">БІО:</label>
+                        <textarea id="BIO" name="BIO" rows="4" cols="30" placeholder="Розкажіть про себе..."></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Зареєструватися">
+                        <input type="reset" value="Очистити форму">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+
+    <footer class="block-s block-centered add-margin-tb add-padding-tb border-top bg-sandy border-radius box-shadow">
+        <p class="text-centered">&copy; 2025 Електра. Ніхто не може бути захищеним.</p>
+        <p class="text-centered balder"><a href="#top">Повернутися на початок</a></p>
+    </footer>
+</body>
+</html>

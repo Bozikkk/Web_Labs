@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rw_styles.css">
+    <link rel="icon" type="image/png" href="..\res\icon_tesla_coil.png">
+    <title>Електра - Компоненти</title>
+
+    <style>
+        ul, ol {
+            margin: 0 0 16px 24px;
+            font-size: 1.05rem;
+        }
+
+        ol > li{
+            font-weight: bolder;
+        }
+
+        ul li {
+            background-color: #B8B6B7;
+            text-align: center;
+            width: 100%;
+            border-radius: 5px;
+            margin: 3px 0;
+            font-weight: normal;
+        }
+
+        ul li::marker {
+            color: #3f3e7c;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #8d6e43;
+            margin-top: 5px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #8d6e43;
+        }
+
+        td {
+            font-weight: normal;
+        }
+
+        th {
+            background-color: #f7e9b6;
+            font-weight: bold;
+            color: #3f3e7c;
+            font-size: 1.05rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f7e9b6;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2dfa0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="top" class="block-s bg-sandy text-centered border-bottom box-shadow add-margin-tb add-padding-tb block-centered border-radius">
+        <header style="margin-bottom: 8px;">
+            <h1 class="inline text-blue balder text-shadow border-bottom">Електра</h1>
+        </header>
+        <a href="main.html" class="balder inline-block add-margin-lr text-shadow">Головна</a>
+        <a href="about_components.html" class="balder inline-block add-margin-lr text-shadow">Про Компоненти</a>
+        <a href="projects.html" class="balder inline-block add-margin-lr text-shadow">Проєкти</a>
+    </nav>
+
+    <div class="block-s block-centered">
+        <section class="bg-sandy add-margin-b add-padding-tb add-padding-lr border-radius box-shadow">
+            <h2 class="text-blue add-margin-b border-bottom">Категорії компонентів</h2>
+    
+            <div style="width: 32%">
+            <ol>
+                <li>Активні компоненти:
+                    <ul>
+                        <li><a href="#transistors_info">Транзистори</a></li>
+                        <li>Діоди</li>
+                        <li>Інтегральні схеми</li>
+                    </ul>
+                </li>
+
+                <li>Пасивні компоненти:
+                    <ul>
+                        <li>Резистори</li>
+                        <li>Конденсатори</li>
+                        <li>Індуктори</li>
+                    </ul>
+                </li>
+
+                <li>Електромеханічні компоненти:
+                    <ul>
+                        <li>Реле</li>
+                        <li>Перемикачі</li>
+                        <li>Роз'єми</li>
+                    </ul>
+                </li>
+            </div>
+
+                <li>Мікроконтролери:
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Назва</th>
+                                <th>Архітектура</th>
+                                <th>Частота</th>
+                                <th>Пам'ять</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arduino Uno</td>
+                                <td>ATmega328P</td>
+                                <td>16 МГц</td>
+                                <td>32 КБ</td>
+                            </tr>
+                            <tr>
+                                <td>ESP32</td>
+                                <td>Xtensa LX6</td>
+                                <td>240 МГц</td>
+                                <td>520 КБ</td>
+                            </tr>
+                            <tr>
+                                <td>STM32F4</td>
+                                <td>ARM Cortex-M4</td>
+                                <td>168 МГц</td>
+                                <td>1 МБ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ol>
+        </section>
+
+        <section id="transistors_info" class="bg-sandy add-margin-b add-padding-tb add-padding-lr border-radius box-shadow">
+            <h2 class="text-blue add-margin-b border-bottom">Транзистори</h2>
+            <p><b>Транзистор</b> — це напівпровідниковий електронний компонент, який використовується для підсилення або перемикання електричних сигналів.</p>
+            <h4 class="text-blue">Основні типи транзисторів:</h4>
+            <ul>
+                <li>Біполярні (BJT)</li>
+                <li>Польові (FET)</li>
+                <li>Біполярні з ізольованим затвором (IGBT)</li>
+            </ul>
+
+            <img src="..\res\transistors_info.jpg" alt="Зображення різних типів транзисторів." title="Типи транзисторів" class="block block-centered frame standart-width">
+
+        </section>
+    </div>
+
+    <footer class="block-s block-centered add-margin-tb add-padding-tb border-top bg-sandy border-radius box-shadow">
+        <p class="text-centered">&copy; 2025 Електра. Всі права вразливі.</p>
+        <p class="text-centered balder"><a href="#top">Повернутися на початок</a></p>
+    </footer>
+</body>
+</html>

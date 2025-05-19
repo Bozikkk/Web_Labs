@@ -1,0 +1,277 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#f5f0e6',
+                        terracotta: '#c8553d',
+                        olive: '#556b2f',
+                        sand: '#d2b48c',
+                        rust: '#8b4513',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Викладачі — Міраж</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap" /><style>
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+      }
+    </style><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-cream font-sans text-rust">
+
+    <header id="header" class="py-4 px-6 md:px-12 lg:px-20 bg-sand shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="text-4xl font-serif font-bold text-terracotta mr-2">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-serif font-bold text-terracotta">Міраж</h1>
+            </div>
+            <nav class="flex flex-wrap justify-center">
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="index.html">Головна</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="courses.html">Курси</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="gallery.html">Галерея</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer border-b-2 border-terracotta "><a href="teachers.html">Викладачі</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="contacts.html">Контакти</a></span>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-teachers" class="min-h-[1200px]">
+        <section id="teachers-hero" class="py-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-sand to-cream">
+            <div class="container mx-auto flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-terracotta mb-6">Наші викладачі</h2>
+                    <p class="text-lg text-rust mb-8">Професіонали з великим досвідом, які допомагають учасникам розкрити свій потенціал і знайти власний стиль у мистецтві.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <span class="bg-terracotta hover:bg-rust text-cream font-medium py-3 px-6 rounded-md text-center transition duration-300 cursor-pointer"><a href="courses.html">Дізнатися про курси</a></span>
+                        <span class="border-2 border-terracotta text-terracotta hover:bg-terracotta hover:text-cream font-medium py-3 px-6 rounded-md text-center transition duration-300 cursor-pointer"><a href="contacts.html">Приєднатися до гуртка</a></span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img class="rounded-lg shadow-lg h-[340px] w-full object-cover max-w-md" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3f2148e008-ab56a6e21ad0c4af36cd.png" alt="art teacher guiding adult student at easel in warm lit studio, teaching painting technique, artistic atmosphere" />
+                </div>
+            </div>
+        </section>
+
+        <section id="teachers-list" class="py-16 px-6 md:px-12 lg:px-20 bg-sand/30">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-terracotta mb-4">Наша команда</h2>
+                    <p class="text-lg text-rust max-w-3xl mx-auto">Зустрічайте наших викладачів — людей, які допомагають учасникам розкривати свої таланти та закохують у мистецтво.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="teachers-cards">
+                    
+                    <div class="bg-cream rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center p-8" id="teacher-card-anna">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="Анна Іваненко" class="w-28 h-28 rounded-full mb-6 border-4 border-sand object-cover" />
+                        <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Анна Іванenko</h3>
+                        <p class="text-olive font-medium mb-2"><i class="fa-solid fa-paintbrush mr-2"></i>Олійний живопис, акварель</p>
+                        <p class="text-rust text-center mb-4">Художниця, педагог з 15-річним досвідом, член Спілки художників. Веде курси олійного живопису та акварелі, допомагає знаходити індивідуальний стиль кожному учаснику.</p>
+                        <div class="flex space-x-3">
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-facebook-f"></i></span>
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-instagram"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-cream rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center p-8" id="teacher-card-oleksiy">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="Олексій Мельник" class="w-28 h-28 rounded-full mb-6 border-4 border-sand object-cover" />
+                        <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Олексій Мельник</h3>
+                        <p class="text-olive font-medium mb-2"><i class="fa-solid fa-pencil mr-2"></i>Графіка, рисунок, пастель</p>
+                        <p class="text-rust text-center mb-4">Майстер графіки, ілюстратор, учасник міжнародних виставок. Особливу увагу приділяє основам композиції та розвитку уяви.</p>
+                        <div class="flex space-x-3">
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-facebook-f"></i></span>
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-instagram"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-cream rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center p-8" id="teacher-card-iryna">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg" alt="Ірина Кравчук" class="w-28 h-28 rounded-full mb-6 border-4 border-sand object-cover" />
+                        <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Ірина Кравчук</h3>
+                        <p class="text-olive font-medium mb-2"><i class="fa-solid fa-water mr-2"></i>Акварель, акрил</p>
+                        <p class="text-rust text-center mb-4">Сучасна художниця, арт-терапевт. Веде авторські майстер-класи з акварелі та акрилу, допомагає розкрити творчий потенціал через експеримент і натхнення.</p>
+                        <div class="flex space-x-3">
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-facebook-f"></i></span>
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-instagram"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-cream rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center p-8" id="teacher-card-serhiy">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="Сергій Дорошенко" class="w-28 h-28 rounded-full mb-6 border-4 border-sand object-cover" />
+                        <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Сергій Дорошенко</h3>
+                        <p class="text-olive font-medium mb-2"><i class="fa-solid fa-chalkboard-user mr-2"></i>Малювання для початківців</p>
+                        <p class="text-rust text-center mb-4">Педагог з понад 10 років досвіду, працює з новачками та допомагає подолати страх &quot;чистого аркуша&quot;.</p>
+                        <div class="flex space-x-3">
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-facebook-f"></i></span>
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-instagram"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-cream rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center p-8" id="teacher-card-olga">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Ольга Шевченко" class="w-28 h-28 rounded-full mb-6 border-4 border-sand object-cover" />
+                        <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Ольга Шевченко</h3>
+                        <p class="text-olive font-medium mb-2"><i class="fa-solid fa-palette mr-2"></i>Мixed media, колаж</p>
+                        <p class="text-rust text-center mb-4">Майстриня сучасного мистецтва, проводить майстер-класи з колажу та експериментальних технік для дорослих.</p>
+                        <div class="flex space-x-3">
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-facebook-f"></i></span>
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-instagram"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-cream rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center p-8" id="teacher-card-dmytro">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-9.jpg" alt="Дмитро Савченко" class="w-28 h-28 rounded-full mb-6 border-4 border-sand object-cover" />
+                        <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Дмитро Савченко</h3>
+                        <p class="text-olive font-medium mb-2"><i class="fa-solid fa-landmark mr-2"></i>Пейзаж, архітектура</p>
+                        <p class="text-rust text-center mb-4">Художник-пейзажист, викладач архітектурного скетчу. Ділиться секретами передачі простору та світла.</p>
+                        <div class="flex space-x-3">
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-facebook-f"></i></span>
+                            <span class="text-terracotta hover:text-rust text-lg cursor-pointer"><i class="fa-brands fa-instagram"></i></span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="teachers-why" class="py-16 px-6 md:px-12 lg:px-20">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-terracotta mb-4">Чому обирають наших викладачів?</h2>
+                    <p class="text-lg text-rust max-w-3xl mx-auto">Всі викладачі студії &quot;Міраж&quot; — це люди, які не тільки створюють мистецтво, а й надихають інших розвиватися, ділитися досвідом і підтримувати на творчому шляху.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="teachers-why-cards">
+                    <div class="bg-sand/40 p-6 rounded-lg shadow-md flex flex-col items-center" id="teachers-why-pro">
+                        <div class="text-3xl text-terracotta mb-4"><i class="fa-solid fa-award"></i></div>
+                        <h3 class="text-xl font-serif font-bold text-rust mb-2">Професійний досвід</h3>
+                        <p class="text-rust text-center">Стаж від 7 до 20 років, участь у виставках, власні творчі проекти.</p>
+                    </div>
+                    <div class="bg-sand/40 p-6 rounded-lg shadow-md flex flex-col items-center" id="teachers-why-support">
+                        <div class="text-3xl text-terracotta mb-4"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        <h3 class="text-xl font-serif font-bold text-rust mb-2">Індивідуальний підхід</h3>
+                        <p class="text-rust text-center">Підтримка, натхнення та розвиток особистості кожного учасника групи.</p>
+                    </div>
+                    <div class="bg-sand/40 p-6 rounded-lg shadow-md flex flex-col items-center" id="teachers-why-inspiration">
+                        <div class="text-3xl text-terracotta mb-4"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3 class="text-xl font-serif font-bold text-rust mb-2">Натхнення та мотивація</h3>
+                        <p class="text-rust text-center">Створюють дружню атмосферу та мотивують до експериментів і самовираження.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teachers-feedback" class="py-16 px-6 md:px-12 lg:px-20 bg-sand/20">
+            <div class="container mx-auto max-w-3xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-terracotta mb-2">Залишити питання або відгук</h2>
+                    <p class="text-lg text-rust">Пишіть нам, якщо хочете дізнатися більше про наших викладачів або залишити свої побажання!</p>
+                </div>
+                <form id="teachers-feedback-form" class="bg-cream rounded-lg p-8 shadow-md space-y-6">
+                    <input type="text" class="w-full border border-sand rounded-md py-3 px-4 mb-2 focus:outline-none focus:border-terracotta text-rust font-medium bg-white" placeholder="Ваше ім'я" />
+                    <textarea class="w-full border border-sand rounded-md py-3 px-4 mb-2 focus:outline-none focus:border-terracotta text-rust font-medium bg-white" rows="4" placeholder="Ваше питання або відгук"></textarea>
+                    <div class="flex flex-col sm:flex-row justify-between items-center">
+                        <label class="block text-rust font-medium mb-2 sm:mb-0">
+                            <i class="fa-solid fa-envelope mr-2 text-terracotta"></i> Email (необов'язково)
+                            <input type="email" class="ml-2 text-sand border-b border-sand outline-none bg-transparent px-2 py-1" placeholder="example@email.com" />
+                        </label>
+                        <button type="submit" class="bg-terracotta hover:bg-rust text-cream py-3 px-8 rounded-md font-medium transition duration-300 cursor-pointer mt-4 sm:mt-0">Надіслати</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="teachers-cta" class="py-16 px-6 md:px-12 lg:px-20 bg-terracotta text-cream">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Станьте учасником студії &quot;Міраж&quot;</h2>
+                <p class="text-lg mb-8 max-w-3xl mx-auto">Запишіться на заняття з улюбленим викладачем — і почніть свою творчу подорож уже сьогодні!</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <span class="bg-cream text-terracotta hover:bg-sand hover:text-rust font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer"><a href="courses.html">Записатися на курс</a></span>
+                    <span class="border-2 border-cream text-cream hover:bg-cream hover:text-terracotta font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer"><a href="contacts.html">Поставити питання</a></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="py-8 px-6 md:px-12 lg:px-20 bg-rust text-cream">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Міраж</h3>
+                    <p class="mb-4">Художній гурток, де кожен може розкрити свій творчий потенціал.</p>
+                    <div class="flex space-x-4">
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Контакти</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-location-dot mr-2"></i>
+                            <span>вул. Мистецька, 45, м. Київ</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-2"></i>
+                            <span>+38 (050) 123-45-67</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-2"></i>
+                            <span>info@mirazh-art.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-clock mr-2"></i>
+                            <span>Пн-Пт: 10:00-20:00, Сб: 10:00-18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cream/30 mt-8 pt-8 text-center">
+                <p>© 2025 Художній гурток "Міраж". Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+</body></html>

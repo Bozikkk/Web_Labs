@@ -1,0 +1,207 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#f5f0e6',
+                        terracotta: '#c8553d',
+                        olive: '#556b2f',
+                        sand: '#d2b48c',
+                        rust: '#8b4513',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Контакти — Міраж</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap" /><style>
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+      }
+    </style><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-cream font-sans text-rust">
+
+    <header id="header" class="py-4 px-6 md:px-12 lg:px-20 bg-sand shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="text-4xl font-serif font-bold text-terracotta mr-2">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-serif font-bold text-terracotta">Міраж</h1>
+            </div>
+            <nav class="flex flex-wrap justify-center">
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="index.html">Головна</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="courses.html">Курси</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="gallery.html">Галерея</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="teachers.html">Викладачі</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer border-b-2 border-terracotta"><a href="contacts.html">Контакти</a></span>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-contacts" class="min-h-[900px]">
+
+        <section id="contacts-hero" class="py-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-sand to-cream">
+            <div class="container mx-auto flex flex-col md:flex-row items-center">
+                <div class="md:w-2/3 mb-8 md:mb-0 md:pr-10">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-terracotta mb-6">Контакти студії &quot;Міраж&quot;</h2>
+                    <p class="text-lg text-rust mb-8">Маєте питання або бажаєте записатися на заняття? Залишайте заявку, телефонуйте або приходьте до нашої затишної студії. Ми завжди раді новим знайомствам!</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <span class="bg-terracotta hover:bg-rust text-cream font-medium py-3 px-6 rounded-md text-center transition duration-300 cursor-pointer"><a href="contacts.html">Записатися на заняття</a></span>
+                        <span class="border-2 border-terracotta text-terracotta hover:bg-terracotta hover:text-cream font-medium py-3 px-6 rounded-md text-center transition duration-300 cursor-pointer"><a href="contacts.html">Поставити питання</a></span>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <img class="rounded-lg shadow-lg h-[300px] w-full max-w-xs object-cover" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="art studio cozy warm with plants and easel" />
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts-details" class="py-16 px-6 md:px-12 lg:px-20 bg-sand/30">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div id="contacts-info" class="bg-cream rounded-lg shadow-md p-8 flex flex-col justify-center">
+                    <h3 class="text-2xl font-serif font-bold text-terracotta mb-6">Наші контакти</h3>
+                    <ul class="space-y-5 text-lg">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-location-dot text-terracotta text-2xl mr-4"></i>
+                            <span>вул. Мистецька, 45, м. Київ</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone text-terracotta text-2xl mr-4"></i>
+                            <span>+38 (050) 123-45-67</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope text-terracotta text-2xl mr-4"></i>
+                            <span>info@mirazh-art.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-clock text-terracotta text-2xl mr-4"></i>
+                            <span>Пн-Пт: 10:00-20:00, Сб: 10:00-18:00</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8 flex space-x-5">
+                        <span class="text-terracotta hover:text-rust text-2xl cursor-pointer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></span>
+                        <span class="text-terracotta hover:text-rust text-2xl cursor-pointer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></span>
+                        <span class="text-terracotta hover:text-rust text-2xl cursor-pointer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></span>
+                    </div>
+                </div>
+                <div id="contacts-form-block" class="bg-cream rounded-lg shadow-md p-8 flex flex-col justify-center">
+                    <h3 class="text-2xl font-serif font-bold text-terracotta mb-6">Залишити заявку або питання</h3>
+                    <form id="contacts-form" class="space-y-5">
+                        <input type="text" class="w-full border border-sand rounded-md py-3 px-4 focus:outline-none focus:border-terracotta text-rust font-medium bg-white" placeholder="Ваше ім'я" />
+                        <input type="email" class="w-full border border-sand rounded-md py-3 px-4 focus:outline-none focus:border-terracotta text-rust font-medium bg-white" placeholder="Email (необов'язково)" />
+                        <textarea class="w-full border border-sand rounded-md py-3 px-4 focus:outline-none focus:border-terracotta text-rust font-medium bg-white" rows="4" placeholder="Ваше питання або повідомлення"></textarea>
+                        <button type="submit" class="bg-terracotta hover:bg-rust text-cream py-3 px-8 rounded-md font-medium transition duration-300 cursor-pointer w-full">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts-map" class="py-16 px-6 md:px-12 lg:px-20">
+            <div class="container mx-auto max-w-4xl">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl md:text-3xl font-serif font-bold text-terracotta mb-2">Як нас знайти?</h3>
+                    <p class="text-lg text-rust">Наша студія знаходиться у центрі Києва, поруч із зручною транспортною розв'язкою. Ласкаво просимо до &quot;Міраж&quot;!</p>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md border border-sand">
+                    <iframe class="w-full h-[350px]" src="https://www.openstreetmap.org/export/embed.html?bbox=30.516667%2C50.433333%2C30.546667%2C50.453333&amp;layer=mapnik&amp;marker=50.443333%2C30.531667" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts-cta" class="py-16 px-6 md:px-12 lg:px-20 bg-terracotta text-cream">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Залишились запитання?</h2>
+                <p class="text-lg mb-8 max-w-3xl mx-auto">Зателефонуйте або напишіть нам — ми з радістю допоможемо вам зробити перший крок у творчість!</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <span class="bg-cream text-terracotta hover:bg-sand hover:text-rust font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer">Написати у Viber</span>
+                    <span class="border-2 border-cream text-cream hover:bg-cream hover:text-terracotta font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer">Зателефонувати</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="py-8 px-6 md:px-12 lg:px-20 bg-rust text-cream">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Міраж</h3>
+                    <p class="mb-4">Художній гурток, де кожен може розкрити свій творчий потенціал.</p>
+                    <div class="flex space-x-4">
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Контакти</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-location-dot mr-2"></i>
+                            <span>вул. Мистецька, 45, м. Київ</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-2"></i>
+                            <span>+38 (050) 123-45-67</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-2"></i>
+                            <span>info@mirazh-art.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-clock mr-2"></i>
+                            <span>Пн-Пт: 10:00-20:00, Сб: 10:00-18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cream/30 mt-8 pt-8 text-center">
+                <p>© 2025 Художній гурток "Міраж". Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+</body></html>

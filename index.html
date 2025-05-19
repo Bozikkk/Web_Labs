@@ -1,0 +1,291 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#f5f0e6',
+                        terracotta: '#c8553d',
+                        olive: '#556b2f',
+                        sand: '#d2b48c',
+                        rust: '#8b4513',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Міраж - Художній гурток для дорослих</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap" /><style>
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+      }
+    </style><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-cream font-sans text-rust">
+    
+    <!-- Header -->
+    <header id="header" class="py-4 px-6 md:px-12 lg:px-20 bg-sand shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="text-4xl font-serif font-bold text-terracotta mr-2">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-serif font-bold text-terracotta">Міраж</h1>
+            </div>
+            <nav class="flex flex-wrap justify-center">
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 border-b-2 border-terracotta cursor-pointer"><a href="index.html">Головна</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="courses.html">Курси</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="gallery.html">Галерея</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="teachers.html">Викладачі</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="contacts.html">Контакти</a></span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-sand to-cream">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-terracotta mb-6">Відкрийте світ мистецтва разом з нами</h2>
+                <p class="text-lg text-rust mb-8">Художній гурток "Міраж" — це місце, де кожен може розкрити свій творчий потенціал, навчитися новим технікам та знайти натхнення у колі однодумців.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <span class="bg-terracotta hover:bg-rust text-cream font-medium py-3 px-6 rounded-md text-center transition duration-300 cursor-pointer"><a href="contacts.html">Записатися на заняття</a></span>
+                    <span class="border-2 border-terracotta text-terracotta hover:bg-terracotta hover:text-cream font-medium py-3 px-6 rounded-md text-center transition duration-300 cursor-pointer"><a href="gallery.html">Дізнатися більше</a></span>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img class="rounded-lg shadow-lg h-[400px] w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a29cc9551a-c08f82c966a54c666107.png" alt="warm cozy art studio with easels, canvases, art supplies, large windows with natural light, adults painting, warm color palette, inviting atmosphere" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 md:px-12 lg:px-20">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-terracotta mb-4">Про наш гурток</h2>
+                <p class="text-lg text-rust max-w-3xl mx-auto">Художній гурток "Міраж" був заснований у 2015 році з метою створення творчого простору для бажаючих розвиватися у світі мистецтва.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-sand/40 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-4xl text-terracotta mb-4">
+                        <i class="fa-solid fa-paintbrush"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-rust mb-3">Різноманітні техніки</h3>
+                    <p class="text-rust">Навчаємо різним технікам малювання: олія, акварель, акрил, пастель, графіка та багато іншого.</p>
+                </div>
+                <div class="bg-sand/40 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-4xl text-terracotta mb-4">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-rust mb-3">Дружня атмосфера</h3>
+                    <p class="text-rust">У нас панує тепла та творча атмосфера, де кожен почувається комфортно і може розкрити свій потенціал.</p>
+                </div>
+                <div class="bg-sand/40 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-4xl text-terracotta mb-4">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-rust mb-3">Професійні викладачі</h3>
+                    <p class="text-rust">Наші викладачі — досвідчені художники з багаторічним стажем, які з радістю діляться своїми знаннями.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Preview -->
+    <section id="courses-preview" class="py-16 px-6 md:px-12 lg:px-20 bg-sand/30">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-terracotta mb-4">Наші курси</h2>
+                <p class="text-lg text-rust max-w-3xl mx-auto">Ми пропонуємо різноманітні курси для всіх рівнів підготовки — від початківців до досвідчених художників.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img class="h-48 w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/733917027b-ce1bafa2b7a92465f289.png" alt="person painting with oil paints on canvas, warm colors, art studio setting" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Олійний живопис</h3>
+                        <p class="text-rust mb-4">Опануйте класичну техніку олійного живопису, навчіться створювати глибокі та виразні картини.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-olive font-medium">8 тижнів</span>
+                            <span class="text-terracotta hover:text-rust transition duration-300 cursor-pointer"><a href="courses.html">Детальніше →</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img class="h-48 w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d9849919e2-62f7a2d45f17b755f38a.png" alt="person working with watercolor paints, painting colorful landscape, art studio" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Акварель</h3>
+                        <p class="text-rust mb-4">Навчіться техніці акварельного живопису, створюйте легкі та повітряні композиції.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-olive font-medium">6 тижнів</span>
+                            <span class="text-terracotta hover:text-rust transition duration-300 cursor-pointer"><a href="courses.html">Детальніше →</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <img class="h-48 w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9d7a09c854-e370d524bb781328d764.png" alt="person sketching with pencil and charcoal, still life drawing, art studio environment" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Графіка та рисунок</h3>
+                        <p class="text-rust mb-4">Основи рисунку олівцем, вугіллям та тушшю. Вивчення пропорцій, світлотіні та композиції.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-olive font-medium">7 тижнів</span>
+                            <span class="text-terracotta hover:text-rust transition duration-300 cursor-pointer"><a href="courses.html">Детальніше →</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <span class="inline-block bg-terracotta hover:bg-rust text-cream font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer"><a href="courses.html">Переглянути всі курси</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 px-6 md:px-12 lg:px-20">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-terracotta mb-4">Відгуки наших учнів</h2>
+                <p class="text-lg text-rust max-w-3xl mx-auto">Що говорять люди, які вже відвідують наші заняття.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-sand/20 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="Олена" class="w-16 h-16 rounded-full mr-4" />
+                        <div>
+                            <h3 class="text-lg font-serif font-bold text-rust">Олена Петренко</h3>
+                            <p class="text-olive">Курс акварелі</p>
+                        </div>
+                    </div>
+                    <p class="text-rust italic">"Завжди мріяла навчитися малювати, але боялася починати у дорослому віці. Гурток 'Міраж' дав мені можливість повірити в себе. Тепер малювання — моє улюблене хобі, яке приносить радість та спокій."</p>
+                </div>
+                <div class="bg-sand/20 p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg" alt="Андрій" class="w-16 h-16 rounded-full mr-4" />
+                        <div>
+                            <h3 class="text-lg font-serif font-bold text-rust">Андрій Коваленко</h3>
+                            <p class="text-olive">Курс олійного живопису</p>
+                        </div>
+                    </div>
+                    <p class="text-rust italic">"Прекрасний гурток з дружньою атмосферою та високим рівнем викладання. За півроку занять я пройшов шлях від простих начерків до повноцінних картин, якими пишаюсь. Дякую викладачам за терпіння та підтримку!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section id="gallery-preview" class="py-16 px-6 md:px-12 lg:px-20 bg-sand/30">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-terracotta mb-4">Галерея робіт</h2>
+                <p class="text-lg text-rust max-w-3xl mx-auto">Роботи наших учнів, які демонструють різноманітність стилів та технік.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img class="h-40 w-full object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ec5e2bd1f4-29d6083d026c1c47c447.png" alt="oil painting of landscape with mountains and trees, warm colors" />
+                <img class="h-40 w-full object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/7f61d76c4e-5c9a262b48cfe34e981a.png" alt="watercolor painting of flowers in vase, soft pastel colors" />
+                <img class="h-40 w-full object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/62545c00e9-bd55b46f313b5fe33ab9.png" alt="acrylic painting of cityscape at sunset, vibrant colors" />
+                <img class="h-40 w-full object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9f94b1db86-831ffcd6bd3f26fba065.png" alt="charcoal drawing of still life with fruit and pottery" />
+                <img class="h-40 w-full object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/71bfb07bd2-2b79987000c16b683a3e.png" alt="pastel drawing of portrait, soft warm tones" />
+                <img class="h-40 w-full object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c89fab17a9-339ade7db0777436a741.png" alt="mixed media artwork with textures and warm colors" />
+                <img class="h-40 w-full object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a56788739b-5d03382586a1ffa301c3.png" alt="ink drawing of trees and nature scene" />
+                <img class="h-40 w-full object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/676d776061-9a63f288e5a4c999758b.png" alt="abstract painting with warm earth tones, textured canvas" />
+            </div>
+            <div class="text-center mt-10">
+                <span class="inline-block bg-terracotta hover:bg-rust text-cream font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer"><a href="gallery.html">Переглянути всю галерею</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-16 px-6 md:px-12 lg:px-20 bg-terracotta text-cream">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Розкрийте свій творчий потенціал разом з нами</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">Запрошуємо вас приєднатися до нашого художнього гуртка. Перше пробне заняття — безкоштовно!</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <span class="bg-cream text-terracotta hover:bg-sand hover:text-rust font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer"><a href="contacts.html">Записатися на пробне заняття</a></span>
+                <span class="border-2 border-cream text-cream hover:bg-cream hover:text-terracotta font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer"><a href="contacts.html">Зв'язатися з нами</a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="py-8 px-6 md:px-12 lg:px-20 bg-rust text-cream">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Міраж</h3>
+                    <p class="mb-4">Художній гурток, де кожен може розкрити свій творчий потенціал.</p>
+                    <div class="flex space-x-4">
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Контакти</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-location-dot mr-2"></i>
+                            <span>вул. Мистецька, 45, м. Київ</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-2"></i>
+                            <span>+38 (050) 123-45-67</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-2"></i>
+                            <span>info@mirazh-art.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-clock mr-2"></i>
+                            <span>Пн-Пт: 10:00-20:00, Сб: 10:00-18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cream/30 mt-8 pt-8 text-center">
+                <p>© 2025 Художній гурток "Міраж". Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+</body></html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>::-webkit-scrollbar { display: none;}</style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#f5f0e6',
+                        terracotta: '#c8553d',
+                        olive: '#556b2f',
+                        sand: '#d2b48c',
+                        rust: '#8b4513',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Open Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Курси — Міраж</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;display=swap" /><style>
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+      }
+    </style><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-cream font-sans text-rust">
+
+    <header id="header" class="py-4 px-6 md:px-12 lg:px-20 bg-sand shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="text-4xl font-serif font-bold text-terracotta mr-2">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-serif font-bold text-terracotta">Міраж</h1>
+            </div>
+            <nav class="flex flex-wrap justify-center">
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="main.html">Головна</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer border-b-2 border-terracotta"><a href="courses.html">Курси</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="gallery.html">Галерея</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="teachers.html">Викладачі</a></span>
+                <span class="px-4 py-2 text-lg font-medium text-rust hover:text-terracotta transition duration-300 cursor-pointer"><a href="contacts.html">Контакти</a></span>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-courses" class="min-h-[1200px]">
+        <section id="courses-hero" class="py-16 px-6 md:px-12 lg:px-20 bg-gradient-to-b from-sand to-cream">
+            <div class="container mx-auto flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-terracotta mb-6">Курси художнього гуртка "Міраж"</h2>
+                    <p class="text-lg text-rust mb-8">У нас ви знайдете курси на будь-який рівень підготовки: від першого мазка до майстерності. Виберіть напрямок, який вам до душі, та розкрийте свою творчість!</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <span class="bg-terracotta hover:bg-rust text-cream font-medium py-3 px-6 rounded-md text-center transition duration-300 cursor-pointer"><a href="contacts.html">Записатися на курс</a></span>
+                        <span class="border-2 border-terracotta text-terracotta hover:bg-terracotta hover:text-cream font-medium py-3 px-6 rounded-md text-center transition duration-300 cursor-pointer"><a href="contacts.html">Пробне заняття</a></span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img class="rounded-lg shadow-lg h-[340px] w-full object-cover max-w-md" src="..\res\maslo.jpg" alt="заняття з живопису, світла арт-студія, тепла атмосфера" />
+                </div>
+            </div>
+        </section>
+
+        <section id="courses-list" class="py-16 px-6 md:px-12 lg:px-20 bg-sand/30">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-terracotta mb-4">Наші основні курси</h2>
+                    <p class="text-lg text-rust max-w-3xl mx-auto">Від класики до сучасного мистецтва — обирайте свій шлях розвитку.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="courses-cards-list">
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" id="course-card-oil">
+                        <img class="h-48 w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/077af08b36-9ecfd84def89586c3050.png" alt="oil painting class with students working on easels in warm studio light, traditional art" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Олійний живопис</h3>
+                            <p class="text-rust mb-4">Вивчимо класичні та сучасні техніки олійного живопису, робота з палітрою, кольором та шаруватістю. Курс для початківців і тих, хто хоче вдосконалити майстерність.</p>
+                            <ul class="mb-2 space-y-1 text-olive text-sm">
+                                <li><i class="fa-solid fa-circle-dot mr-2 text-terracotta"></i>8 тижнів, 1 раз/тиждень</li>
+                                <li><i class="fa-solid fa-users-line mr-2 text-terracotta"></i>Група: до 10 осіб</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-olive">Ціна: 3200 грн</span>
+                                <span class="text-terracotta hover:text-rust transition duration-300 cursor-pointer"><a href="contacts.html">Записатись</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" id="course-card-watercolor">
+                        <img class="h-48 w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/768394388d-9cb1df4f355c2c9cfd8d.png" alt="watercolor painting class, people painting flowers and landscapes, bright artistic atmosphere" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Акварель</h3>
+                            <p class="text-rust mb-4">Освоїте основи акварельної техніки, навчитеся малювати пейзажі, квіти, портрети. Секрети легкості та прозорості фарб, робота з водою та папером.</p>
+                            <ul class="mb-2 space-y-1 text-olive text-sm">
+                                <li><i class="fa-solid fa-circle-dot mr-2 text-terracotta"></i>6 тижнів, 1 раз/тиждень</li>
+                                <li><i class="fa-solid fa-users-line mr-2 text-terracotta"></i>Група: до 12 осіб</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-olive">Ціна: 2700 грн</span>
+                                <span class="text-terracotta hover:text-rust transition duration-300 cursor-pointer"><a href="contacts.html">Записатись</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" id="course-card-drawing">
+                        <img class="h-48 w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ea17e5dd08-757d2a49c0e967404356.png" alt="pencil drawing class, students sketching still life, art studio environment" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Графіка та рисунок</h3>
+                            <p class="text-rust mb-4">Базові навички рисунку простим олівцем, вугіллям, тушшю. Пропорції, композиція, світлотінь, побудова форми — все, що потрібно для впевненого старту.</p>
+                            <ul class="mb-2 space-y-1 text-olive text-sm">
+                                <li><i class="fa-solid fa-circle-dot mr-2 text-terracotta"></i>7 тижнів, 1 раз/тиждень</li>
+                                <li><i class="fa-solid fa-users-line mr-2 text-terracotta"></i>Група: до 14 осіб</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-olive">Ціна: 2900 грн</span>
+                                <span class="text-terracotta hover:text-rust transition duration-300 cursor-pointer"><a href="contacts.html">Записатись</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" id="course-card-acrylic">
+                        <img class="h-48 w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/025649c824-5df5c17661f25f413ffc.png" alt="acrylic painting class, modern abstract art, vibrant colors" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Акриловий живопис</h3>
+                            <p class="text-rust mb-4">Сучасні техніки малювання акрилом, робота з фактурою, пастою, змішування кольорів. Для тих, хто любить експерименти!</p>
+                            <ul class="mb-2 space-y-1 text-olive text-sm">
+                                <li><i class="fa-solid fa-circle-dot mr-2 text-terracotta"></i>5 тижнів, 1 раз/тиждень</li>
+                                <li><i class="fa-solid fa-users-line mr-2 text-terracotta"></i>Група: до 10 осіб</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-olive">Ціна: 2200 грн</span>
+                                <span class="text-terracotta hover:text-rust transition duration-300 cursor-pointer"><a href="contacts.html">Записатись</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" id="course-card-pastel">
+                        <img class="h-48 w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/bed6c090ae-978b2f90578991a1bf03.png" alt="pastel drawing class, portrait artwork, soft colors and textures" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Пастель</h3>
+                            <p class="text-rust mb-4">М'яка й суха пастель, створення об'ємних натюрмортів та портретів. Відчуйте ніжність кольору й фактури в своїх руках!</p>
+                            <ul class="mb-2 space-y-1 text-olive text-sm">
+                                <li><i class="fa-solid fa-circle-dot mr-2 text-terracotta"></i>6 тижнів, 1 раз/тиждень</li>
+                                <li><i class="fa-solid fa-users-line mr-2 text-terracotta"></i>Група: до 8 осіб</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-olive">Ціна: 2600 грн</span>
+                                <span class="text-terracotta hover:text-rust transition duration-300 cursor-pointer"><a href="contacts.html">Записатись</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300" id="course-card-mixed">
+                        <img class="h-48 w-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9dc3966778-0fe4a7b0f921a28dffca.png" alt="mixed media art class, collage and texture work, experimental techniques" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-bold text-terracotta mb-2">Змішані техніки</h3>
+                            <p class="text-rust mb-4">Колаж, текстури, поєднання різних матеріалів. Сучасний курс для тих, хто прагне створювати унікальні арт-об'єкти.</p>
+                            <ul class="mb-2 space-y-1 text-olive text-sm">
+                                <li><i class="fa-solid fa-circle-dot mr-2 text-terracotta"></i>4 тижні, 1 раз/тиждень</li>
+                                <li><i class="fa-solid fa-users-line mr-2 text-terracotta"></i>Група: до 6 осіб</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-olive">Ціна: 2000 грн</span>
+                                <span class="text-terracotta hover:text-rust transition duration-300 cursor-pointer"><a href="contacts.html">Записатись</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <span class="inline-block bg-terracotta hover:bg-rust text-cream font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer"><a href="contacts.html">Поставити запитання щодо курсів</a></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses-faq" class="py-16 px-6 md:px-12 lg:px-20">
+            <div class="container mx-auto max-w-3xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-terracotta mb-2">Поширені питання</h2>
+                    <p class="text-lg text-rust">Відповіді на питання, які найчастіше задають наші учні.</p>
+                </div>
+                <div id="faq-list" class="space-y-6">
+                    <div class="bg-sand/40 rounded-lg p-6" id="faq-item-1">
+                        <div class="flex items-center mb-2">
+                            <i class="fa-regular fa-circle-question text-terracotta text-2xl mr-3"></i>
+                            <span class="text-lg font-serif font-bold text-rust">Чи потрібен власний матеріал?</span>
+                        </div>
+                        <p class="text-rust text-base">Більшість матеріалів надаються студією, але ви можете приносити свої улюблені інструменти. Перелік для кожного курсу уточнюється окремо.</p>
+                    </div>
+                    <div class="bg-sand/40 rounded-lg p-6" id="faq-item-2">
+                        <div class="flex items-center mb-2">
+                            <i class="fa-regular fa-circle-question text-terracotta text-2xl mr-3"></i>
+                            <span class="text-lg font-serif font-bold text-rust">Чи можна приєднатися без досвіду?</span>
+                        </div>
+                        <p class="text-rust text-base">Так, наші курси адаптовані для початківців. Викладачі підтримають вас на кожному етапі.</p>
+                    </div>
+                    <div class="bg-sand/40 rounded-lg p-6" id="faq-item-3">
+                        <div class="flex items-center mb-2">
+                            <i class="fa-regular fa-circle-question text-terracotta text-2xl mr-3"></i>
+                            <span class="text-lg font-serif font-bold text-rust">Як записатися на курс?</span>
+                        </div>
+                        <p class="text-rust text-base">Оберіть потрібний курс на цій сторінці та натисніть &quot;Записатись&quot;, або зателефонуйте нам за номером, вказаним у контактах.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses-cta" class="py-16 px-6 md:px-12 lg:px-20 bg-terracotta text-cream">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Не знаєте, який курс обрати?</h2>
+                <p class="text-lg mb-8 max-w-3xl mx-auto">Ми допоможемо визначитися, врахуємо ваші побажання та рівень підготовки. Залиште заявку, і ми зв'яжемося з вами!</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <span class="bg-cream text-terracotta hover:bg-sand hover:text-rust font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer"><a href="contacts.html">Отримати консультацію</a></span>
+                    <span class="border-2 border-cream text-cream hover:bg-cream hover:text-terracotta font-medium py-3 px-6 rounded-md transition duration-300 cursor-pointer"><a href="contacts.html">Контакти</a></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="py-8 px-6 md:px-12 lg:px-20 bg-rust text-cream">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Міраж</h3>
+                    <p class="mb-4">Художній гурток, де кожен може розкрити свій творчий потенціал.</p>
+                    <div class="flex space-x-4">
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        <span class="text-cream hover:text-sand transition duration-300 cursor-pointer">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Контакти</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-location-dot mr-2"></i>
+                            <span>вул. Мистецька, 45, м. Київ</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-2"></i>
+                            <span>+38 (050) 123-45-67</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-2"></i>
+                            <span>info@mirazh-art.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-clock mr-2"></i>
+                            <span>Пн-Пт: 10:00-20:00, Сб: 10:00-18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-cream/30 mt-8 pt-8 text-center">
+                <p>© 2025 Художній гурток "Міраж". Усі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+</body></html>
